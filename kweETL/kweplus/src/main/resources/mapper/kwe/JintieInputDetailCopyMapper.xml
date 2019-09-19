@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.JintieInputDetailCopyMapper">
+  <resultMap id="BaseResultMap" type="com.kwe.kweplus.modal.JintieInputDetailCopy">
+    <id column="pid" jdbcType="BIGINT" property="pid" />
+    <result column="MESSAGEHEAD" jdbcType="VARCHAR" property="messagehead" />
+    <result column="MESSAGETYPE" jdbcType="VARCHAR" property="messagetype" />
+    <result column="MESSAGEDATE" jdbcType="VARCHAR" property="messagedate" />
+    <result column="MESSAGETIME" jdbcType="VARCHAR" property="messagetime" />
+    <result column="UPDATEFLAG" jdbcType="VARCHAR" property="updateflag" />
+    <result column="DOCLINENO" jdbcType="VARCHAR" property="doclineno" />
+    <result column="CUSTOMERLINENO" jdbcType="VARCHAR" property="customerlineno" />
+    <result column="STOREID" jdbcType="VARCHAR" property="storeid" />
+    <result column="SKU" jdbcType="VARCHAR" property="sku" />
+    <result column="BRAND" jdbcType="VARCHAR" property="brand" />
+    <result column="MODEL" jdbcType="VARCHAR" property="model" />
+    <result column="HSCODE" jdbcType="VARCHAR" property="hscode" />
+    <result column="CHINESENAME" jdbcType="VARCHAR" property="chinesename" />
+    <result column="SPECIFICATIONS" jdbcType="VARCHAR" property="specifications" />
+    <result column="DECLARATIONELEMENT" jdbcType="VARCHAR" property="declarationelement" />
+    <result column="PONO" jdbcType="VARCHAR" property="pono" />
+    <result column="EXPECTEDQTY" jdbcType="VARCHAR" property="expectedqty" />
+    <result column="LOTTABLE01" jdbcType="VARCHAR" property="lottable01" />
+    <result column="LOTTABLE02" jdbcType="VARCHAR" property="lottable02" />
+    <result column="LOTTABLE03" jdbcType="VARCHAR" property="lottable03" />
+    <result column="LOTTABLE04" jdbcType="VARCHAR" property="lottable04" />
+    <result column="LOTTABLE05" jdbcType="VARCHAR" property="lottable05" />
+    <result column="LOTTABLE06" jdbcType="VARCHAR" property="lottable06" />
+    <result column="LOTTABLE07" jdbcType="VARCHAR" property="lottable07" />
+    <result column="LOTTABLE08" jdbcType="VARCHAR" property="lottable08" />
+    <result column="LOTTABLE09" jdbcType="VARCHAR" property="lottable09" />
+    <result column="LOTTABLE10" jdbcType="VARCHAR" property="lottable10" />
+    <result column="LOTTABLE11" jdbcType="VARCHAR" property="lottable11" />
+    <result column="LOTTABLE12" jdbcType="VARCHAR" property="lottable12" />
+    <result column="DAMAGEDIND" jdbcType="VARCHAR" property="damagedind" />
+    <result column="DAMAGEDCD" jdbcType="VARCHAR" property="damagedcd" />
+    <result column="RCVDWITHEXCPTN" jdbcType="DECIMAL" property="rcvdwithexcptn" />
+    <result column="REASON" jdbcType="VARCHAR" property="reason" />
+    <result column="D_USERDEFINE1" jdbcType="DECIMAL" property="dUserdefine1" />
+    <result column="D_USERDEFINE2" jdbcType="DECIMAL" property="dUserdefine2" />
+    <result column="RECEIVEDTIME" jdbcType="VARCHAR" property="receivedtime" />
+    <result column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="TOID" jdbcType="VARCHAR" property="toid" />
+    <result column="CARTONQTY" jdbcType="VARCHAR" property="cartonqty" />
+    <result column="DECLARATIONUNIT" jdbcType="VARCHAR" property="declarationunit" />
+    <result column="COUNTRYOFORIGIN" jdbcType="VARCHAR" property="countryoforigin" />
+    <result column="CURRENCY" jdbcType="VARCHAR" property="currency" />
+    <result column="STATUTORYUNIT1" jdbcType="VARCHAR" property="statutoryunit1" />
+    <result column="STATUTORYUNIT2" jdbcType="VARCHAR" property="statutoryunit2" />
+    <result column="STATUTORYUNIT2QTY" jdbcType="INTEGER" property="statutoryunit2qty" />
+    <result column="CUBIC" jdbcType="DECIMAL" property="cubic" />
+    <result column="TOTALCUBIC" jdbcType="DECIMAL" property="totalcubic" />
+    <result column="GROSSWEIGHT" jdbcType="DECIMAL" property="grossweight" />
+    <result column="TOTALGROSSWEIGHT" jdbcType="DECIMAL" property="totalgrossweight" />
+    <result column="NETWEIGHT" jdbcType="DECIMAL" property="netweight" />
+    <result column="TOTALNETWEIGHT" jdbcType="DECIMAL" property="totalnetweight" />
+    <result column="PRICE" jdbcType="DECIMAL" property="price" />
+    <result column="TOTALPRICE" jdbcType="DECIMAL" property="totalprice" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="taketime" jdbcType="TIMESTAMP" property="taketime" />
+    <result column="wl_ywno" jdbcType="VARCHAR" property="wlYwno" />
+    <result column="DNCODE" jdbcType="VARCHAR" property="dncode" />
+    <result column="COPYLINENO" jdbcType="VARCHAR" property="copylineno" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from jintie_input_detail_copy
+    where pid = #{pid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.kwe.kweplus.modal.JintieInputDetailCopy">
+    insert into jintie_input_detail_copy (pid, MESSAGEHEAD, MESSAGETYPE, 
+      MESSAGEDATE, MESSAGETIME, UPDATEFLAG, 
+      DOCLINENO, CUSTOMERLINENO, STOREID, 
+      SKU, BRAND, MODEL, 
+      HSCODE, CHINESENAME, SPECIFICATIONS, 
+      DECLARATIONELEMENT, PONO, EXPECTEDQTY, 
+      LOTTABLE01, LOTTABLE02, LOTTABLE03, 
+      LOTTABLE04, LOTTABLE05, LOTTABLE06, 
+      LOTTABLE07, LOTTABLE08, LOTTABLE09, 
+      LOTTABLE10, LOTTABLE11, LOTTABLE12, 
+      DAMAGEDIND, DAMAGEDCD, RCVDWITHEXCPTN, 
+      REASON, D_USERDEFINE1, D_USERDEFINE2, 
+      RECEIVEDTIME, ID, TOID, 
+      CARTONQTY, DECLARATIONUNIT, COUNTRYOFORIGIN, 
+      CURRENCY, STATUTORYUNIT1, STATUTORYUNIT2, 
+      STATUTORYUNIT2QTY, CUBIC, TOTALCUBIC, 
+      GROSSWEIGHT, TOTALGROSSWEIGHT, NETWEIGHT, 
+      TOTALNETWEIGHT, PRICE, TOTALPRICE, 
+      `status`, taketime, wl_ywno, 
+      DNCODE, COPYLINENO)
+    values (#{pid,jdbcType=BIGINT}, #{messagehead,jdbcType=VARCHAR}, #{messagetype,jdbcType=VARCHAR}, 
+      #{messagedate,jdbcType=VARCHAR}, #{messagetime,jdbcType=VARCHAR}, #{updateflag,jdbcType=VARCHAR}, 
+      #{doclineno,jdbcType=VARCHAR}, #{customerlineno,jdbcType=VARCHAR}, #{storeid,jdbcType=VARCHAR}, 
+      #{sku,jdbcType=VARCHAR}, #{brand,jdbcType=VARCHAR}, #{model,jdbcType=VARCHAR}, 
+      #{hscode,jdbcType=VARCHAR}, #{chinesename,jdbcType=VARCHAR}, #{specifications,jdbcType=VARCHAR}, 
+      #{declarationelement,jdbcType=VARCHAR}, #{pono,jdbcType=VARCHAR}, #{expectedqty,jdbcType=VARCHAR}, 
+      #{lottable01,jdbcType=VARCHAR}, #{lottable02,jdbcType=VARCHAR}, #{lottable03,jdbcType=VARCHAR}, 
+      #{lottable04,jdbcType=VARCHAR}, #{lottable05,jdbcType=VARCHAR}, #{lottable06,jdbcType=VARCHAR}, 
+      #{lottable07,jdbcType=VARCHAR}, #{lottable08,jdbcType=VARCHAR}, #{lottable09,jdbcType=VARCHAR}, 
+      #{lottable10,jdbcType=VARCHAR}, #{lottable11,jdbcType=VARCHAR}, #{lottable12,jdbcType=VARCHAR}, 
+      #{damagedind,jdbcType=VARCHAR}, #{damagedcd,jdbcType=VARCHAR}, #{rcvdwithexcptn,jdbcType=DECIMAL}, 
+      #{reason,jdbcType=VARCHAR}, #{dUserdefine1,jdbcType=DECIMAL}, #{dUserdefine2,jdbcType=DECIMAL}, 
+      #{receivedtime,jdbcType=VARCHAR}, #{id,jdbcType=VARCHAR}, #{toid,jdbcType=VARCHAR}, 
+      #{cartonqty,jdbcType=VARCHAR}, #{declarationunit,jdbcType=VARCHAR}, #{countryoforigin,jdbcType=VARCHAR}, 
+      #{currency,jdbcType=VARCHAR}, #{statutoryunit1,jdbcType=VARCHAR}, #{statutoryunit2,jdbcType=VARCHAR}, 
+      #{statutoryunit2qty,jdbcType=INTEGER}, #{cubic,jdbcType=DECIMAL}, #{totalcubic,jdbcType=DECIMAL}, 
+      #{grossweight,jdbcType=DECIMAL}, #{totalgrossweight,jdbcType=DECIMAL}, #{netweight,jdbcType=DECIMAL}, 
+      #{totalnetweight,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, #{totalprice,jdbcType=DECIMAL}, 
+      #{status,jdbcType=INTEGER}, #{taketime,jdbcType=TIMESTAMP}, #{wlYwno,jdbcType=VARCHAR}, 
+      #{dncode,jdbcType=VARCHAR}, #{copylineno,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.kwe.kweplus.modal.JintieInputDetailCopy">
+    update jintie_input_detail_copy
+    set MESSAGEHEAD = #{messagehead,jdbcType=VARCHAR},
+      MESSAGETYPE = #{messagetype,jdbcType=VARCHAR},
+      MESSAGEDATE = #{messagedate,jdbcType=VARCHAR},
+      MESSAGETIME = #{messagetime,jdbcType=VARCHAR},
+      UPDATEFLAG = #{updateflag,jdbcType=VARCHAR},
+      DOCLINENO = #{doclineno,jdbcType=VARCHAR},
+      CUSTOMERLINENO = #{customerlineno,jdbcType=VARCHAR},
+      STOREID = #{storeid,jdbcType=VARCHAR},
+      SKU = #{sku,jdbcType=VARCHAR},
+      BRAND = #{brand,jdbcType=VARCHAR},
+      MODEL = #{model,jdbcType=VARCHAR},
+      HSCODE = #{hscode,jdbcType=VARCHAR},
+      CHINESENAME = #{chinesename,jdbcType=VARCHAR},
+      SPECIFICATIONS = #{specifications,jdbcType=VARCHAR},
+      DECLARATIONELEMENT = #{declarationelement,jdbcType=VARCHAR},
+      PONO = #{pono,jdbcType=VARCHAR},
+      EXPECTEDQTY = #{expectedqty,jdbcType=VARCHAR},
+      LOTTABLE01 = #{lottable01,jdbcType=VARCHAR},
+      LOTTABLE02 = #{lottable02,jdbcType=VARCHAR},
+      LOTTABLE03 = #{lottable03,jdbcType=VARCHAR},
+      LOTTABLE04 = #{lottable04,jdbcType=VARCHAR},
+      LOTTABLE05 = #{lottable05,jdbcType=VARCHAR},
+      LOTTABLE06 = #{lottable06,jdbcType=VARCHAR},
+      LOTTABLE07 = #{lottable07,jdbcType=VARCHAR},
+      LOTTABLE08 = #{lottable08,jdbcType=VARCHAR},
+      LOTTABLE09 = #{lottable09,jdbcType=VARCHAR},
+      LOTTABLE10 = #{lottable10,jdbcType=VARCHAR},
+      LOTTABLE11 = #{lottable11,jdbcType=VARCHAR},
+      LOTTABLE12 = #{lottable12,jdbcType=VARCHAR},
+      DAMAGEDIND = #{damagedind,jdbcType=VARCHAR},
+      DAMAGEDCD = #{damagedcd,jdbcType=VARCHAR},
+      RCVDWITHEXCPTN = #{rcvdwithexcptn,jdbcType=DECIMAL},
+      REASON = #{reason,jdbcType=VARCHAR},
+      D_USERDEFINE1 = #{dUserdefine1,jdbcType=DECIMAL},
+      D_USERDEFINE2 = #{dUserdefine2,jdbcType=DECIMAL},
+      RECEIVEDTIME = #{receivedtime,jdbcType=VARCHAR},
+      ID = #{id,jdbcType=VARCHAR},
+      TOID = #{toid,jdbcType=VARCHAR},
+      CARTONQTY = #{cartonqty,jdbcType=VARCHAR},
+      DECLARATIONUNIT = #{declarationunit,jdbcType=VARCHAR},
+      COUNTRYOFORIGIN = #{countryoforigin,jdbcType=VARCHAR},
+      CURRENCY = #{currency,jdbcType=VARCHAR},
+      STATUTORYUNIT1 = #{statutoryunit1,jdbcType=VARCHAR},
+      STATUTORYUNIT2 = #{statutoryunit2,jdbcType=VARCHAR},
+      STATUTORYUNIT2QTY = #{statutoryunit2qty,jdbcType=INTEGER},
+      CUBIC = #{cubic,jdbcType=DECIMAL},
+      TOTALCUBIC = #{totalcubic,jdbcType=DECIMAL},
+      GROSSWEIGHT = #{grossweight,jdbcType=DECIMAL},
+      TOTALGROSSWEIGHT = #{totalgrossweight,jdbcType=DECIMAL},
+      NETWEIGHT = #{netweight,jdbcType=DECIMAL},
+      TOTALNETWEIGHT = #{totalnetweight,jdbcType=DECIMAL},
+      PRICE = #{price,jdbcType=DECIMAL},
+      TOTALPRICE = #{totalprice,jdbcType=DECIMAL},
+      `status` = #{status,jdbcType=INTEGER},
+      taketime = #{taketime,jdbcType=TIMESTAMP},
+      wl_ywno = #{wlYwno,jdbcType=VARCHAR},
+      DNCODE = #{dncode,jdbcType=VARCHAR},
+      COPYLINENO = #{copylineno,jdbcType=VARCHAR}
+    where pid = #{pid,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select pid, MESSAGEHEAD, MESSAGETYPE, MESSAGEDATE, MESSAGETIME, UPDATEFLAG, DOCLINENO, 
+    CUSTOMERLINENO, STOREID, SKU, BRAND, MODEL, HSCODE, CHINESENAME, SPECIFICATIONS, 
+    DECLARATIONELEMENT, PONO, EXPECTEDQTY, LOTTABLE01, LOTTABLE02, LOTTABLE03, LOTTABLE04, 
+    LOTTABLE05, LOTTABLE06, LOTTABLE07, LOTTABLE08, LOTTABLE09, LOTTABLE10, LOTTABLE11, 
+    LOTTABLE12, DAMAGEDIND, DAMAGEDCD, RCVDWITHEXCPTN, REASON, D_USERDEFINE1, D_USERDEFINE2, 
+    RECEIVEDTIME, ID, TOID, CARTONQTY, DECLARATIONUNIT, COUNTRYOFORIGIN, CURRENCY, STATUTORYUNIT1, 
+    STATUTORYUNIT2, STATUTORYUNIT2QTY, CUBIC, TOTALCUBIC, GROSSWEIGHT, TOTALGROSSWEIGHT, 
+    NETWEIGHT, TOTALNETWEIGHT, PRICE, TOTALPRICE, `status`, taketime, wl_ywno, DNCODE, 
+    COPYLINENO
+    from jintie_input_detail_copy
+    where pid = #{pid,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select pid, MESSAGEHEAD, MESSAGETYPE, MESSAGEDATE, MESSAGETIME, UPDATEFLAG, DOCLINENO, 
+    CUSTOMERLINENO, STOREID, SKU, BRAND, MODEL, HSCODE, CHINESENAME, SPECIFICATIONS, 
+    DECLARATIONELEMENT, PONO, EXPECTEDQTY, LOTTABLE01, LOTTABLE02, LOTTABLE03, LOTTABLE04, 
+    LOTTABLE05, LOTTABLE06, LOTTABLE07, LOTTABLE08, LOTTABLE09, LOTTABLE10, LOTTABLE11, 
+    LOTTABLE12, DAMAGEDIND, DAMAGEDCD, RCVDWITHEXCPTN, REASON, D_USERDEFINE1, D_USERDEFINE2, 
+    RECEIVEDTIME, ID, TOID, CARTONQTY, DECLARATIONUNIT, COUNTRYOFORIGIN, CURRENCY, STATUTORYUNIT1, 
+    STATUTORYUNIT2, STATUTORYUNIT2QTY, CUBIC, TOTALCUBIC, GROSSWEIGHT, TOTALGROSSWEIGHT, 
+    NETWEIGHT, TOTALNETWEIGHT, PRICE, TOTALPRICE, `status`, taketime, wl_ywno, DNCODE, 
+    COPYLINENO
+    from jintie_input_detail_copy
+  </select>
+
+  <select id="selectByYwNo" resultMap="BaseResultMap">
+    select pid, MESSAGEHEAD, MESSAGETYPE, MESSAGEDATE, MESSAGETIME, UPDATEFLAG, DOCLINENO,
+    CUSTOMERLINENO, STOREID, SKU, BRAND, MODEL, HSCODE, CHINESENAME, SPECIFICATIONS,
+    DECLARATIONELEMENT, PONO, EXPECTEDQTY, LOTTABLE01, LOTTABLE02, LOTTABLE03, LOTTABLE04,
+    LOTTABLE05, LOTTABLE06, LOTTABLE07, LOTTABLE08, LOTTABLE09, LOTTABLE10, LOTTABLE11,
+    LOTTABLE12, DAMAGEDIND, DAMAGEDCD, RCVDWITHEXCPTN, REASON, D_USERDEFINE1, D_USERDEFINE2,
+    RECEIVEDTIME, ID, TOID, CARTONQTY, DECLARATIONUNIT, COUNTRYOFORIGIN, CURRENCY, STATUTORYUNIT1,
+    STATUTORYUNIT2, STATUTORYUNIT2QTY, CUBIC, TOTALCUBIC, GROSSWEIGHT, TOTALGROSSWEIGHT,
+    NETWEIGHT, TOTALNETWEIGHT, PRICE, TOTALPRICE, `status`, taketime, wl_ywno, DNCODE,
+    COPYLINENO
+    from jintie_input_detail_copy
+    where wl_ywno  = #{ywNo}
+  </select>
+    <delete id="deleteByYwNo" >
+    delete from jintie_input_detail_copy
+    where wl_ywno = #{ywNo}
+  </delete>
+</mapper>

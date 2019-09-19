@@ -1,0 +1,57 @@
+student:
+  name: 近铁
+  age: 18
+content: "name${student.name}"
+server:
+  port: 55005
+  servlet:
+    context-path: /
+  tomcat:
+    # post请求 不限制请求头大小
+    max-http-post-size: -1
+spring:
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 500MB
+  application:
+    name: kweplus
+  datasource:
+#    url: jdbc:mysql://192.168.10.33:3306/kwe?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+#    driverClassName: com.mysql.jdbc.Driver
+#    username: root
+#    password: Kwe58691315
+    url: jdbc:mysql://192.168.10.12:3306/kwe?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: Wanli58691315
+#    url: jdbc:mysql://localhost:3306/kwe?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+#    driverClassName: com.mysql.jdbc.Driver
+#    username: root
+#    password: Liuw123
+
+logging:
+  level:
+    root: info
+    com.kwe.jintie.dao: DEBUG
+  file: /kwe/kwe.log
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/kwe/*.xml
+  configuration:
+    call-setters-on-nulls: true
+     # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#测式
+#正式
+urlConfig:  
+  dgUrl: http://eric.yx3195.com:55004/channel/upstream_entrance/5fc578ca-dc61-4fe7-832d-656c5598911e
+  sandaoPdfUrl: http://eric.yx3195.com:55004/channel/upstream_entrance/e7cf8660-f114-4932-9072-b4693ba0420f
+  sandaoExcelUrl: http://eric.yx3195.com:55004/channel/upstream_entrance/e7cf8660-f114-4932-9072-b4693ba0420f
+#  dgUrl: http://eric.yx3195.com:55004/channel/upstream_entrance/b7438cae-19d8-4663-bbe9-89732e10d6da
+#  sandaoPdfUrl: http://eric.yx3195.com:55004/channel/upstream_entrance/c6abb034-dd54-4c9f-9644-1e2a11fd8efe
+#  sandaoExcelUrl: http://eric.yx3195.com:55004/channel/upstream_entrance/c6abb034-dd54-4c9f-9644-1e2a11fd8efe
+  uploadFileSavePath: E:\\kweServer\\uploadfile\\
+  ocrFileSavePath: E:\\kweServer\\ocrfile\\
+  excelSavePath: E:\\kweServer\\file\\excel\\

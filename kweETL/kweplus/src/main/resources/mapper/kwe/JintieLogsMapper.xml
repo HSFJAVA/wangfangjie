@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.JintieLogsMapper">
+  <resultMap id="BaseResultMap" type="com.kwe.kweplus.modal.JintieLogs">
+    <id column="log_id" jdbcType="INTEGER" property="logId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="spend_time" jdbcType="TIMESTAMP" property="spendTime" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+    <result column="parameter" jdbcType="VARCHAR" property="parameter" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="result" jdbcType="VARCHAR" property="result" />
+    <result column="remarks1" jdbcType="VARCHAR" property="remarks1" />
+    <result column="remarks2" jdbcType="VARCHAR" property="remarks2" />
+    <result column="remarks3" jdbcType="VARCHAR" property="remarks3" />
+    <result column="remarks4" jdbcType="VARCHAR" property="remarks4" />
+    <result column="remarks5" jdbcType="VARCHAR" property="remarks5" />
+    <result column="remarks6" jdbcType="VARCHAR" property="remarks6" />
+    <result column="remarks7" jdbcType="VARCHAR" property="remarks7" />
+    <result column="remarks8" jdbcType="VARCHAR" property="remarks8" />
+    <result column="remarks9" jdbcType="VARCHAR" property="remarks9" />
+    <result column="remarks10" jdbcType="VARCHAR" property="remarks10" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from jintie_logs
+    where log_id = #{logId,jdbcType=INTEGER}
+  </delete>
+  <!--<insert id="insert" parameterType="com.kwe.kweplus.modal.JintieLogs">-->
+    <!--insert into jintie_logs (log_id, username, description, -->
+      <!--start_time, spend_time, url, -->
+      <!--`method`, `parameter`, ip, -->
+      <!--`result`, remarks1, remarks2, -->
+      <!--remarks3, remarks4, remarks5, -->
+      <!--remarks6, remarks7, remarks8, -->
+      <!--remarks9, remarks10)-->
+    <!--values (#{logId,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, -->
+      <!--now(), #{spendTime,jdbcType=TIMESTAMP}, #{url,jdbcType=VARCHAR},-->
+      <!--#{method,jdbcType=VARCHAR}, #{parameter,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR}, -->
+      <!--#{result,jdbcType=VARCHAR}, #{remarks1,jdbcType=VARCHAR}, #{remarks2,jdbcType=VARCHAR}, -->
+      <!--#{remarks3,jdbcType=VARCHAR}, #{remarks4,jdbcType=VARCHAR}, #{remarks5,jdbcType=VARCHAR}, -->
+      <!--#{remarks6,jdbcType=VARCHAR}, #{remarks7,jdbcType=VARCHAR}, #{remarks8,jdbcType=VARCHAR}, -->
+      <!--#{remarks9,jdbcType=VARCHAR}, #{remarks10,jdbcType=VARCHAR})-->
+  <!--</insert>-->
+  <update id="updateByPrimaryKey" parameterType="com.kwe.kweplus.modal.JintieLogs">
+    update jintie_logs
+    set username = #{username,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      spend_time = #{spendTime,jdbcType=TIMESTAMP},
+      url = #{url,jdbcType=VARCHAR},
+      `method` = #{method,jdbcType=VARCHAR},
+      `parameter` = #{parameter,jdbcType=VARCHAR},
+      ip = #{ip,jdbcType=VARCHAR},
+      `result` = #{result,jdbcType=VARCHAR},
+      remarks1 = #{remarks1,jdbcType=VARCHAR},
+      remarks2 = #{remarks2,jdbcType=VARCHAR},
+      remarks3 = #{remarks3,jdbcType=VARCHAR},
+      remarks4 = #{remarks4,jdbcType=VARCHAR},
+      remarks5 = #{remarks5,jdbcType=VARCHAR},
+      remarks6 = #{remarks6,jdbcType=VARCHAR},
+      remarks7 = #{remarks7,jdbcType=VARCHAR},
+      remarks8 = #{remarks8,jdbcType=VARCHAR},
+      remarks9 = #{remarks9,jdbcType=VARCHAR},
+      remarks10 = #{remarks10,jdbcType=VARCHAR}
+    where log_id = #{logId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select log_id, username, description, start_time, spend_time, url, `method`, `parameter`, 
+    ip, `result`, remarks1, remarks2, remarks3, remarks4, remarks5, remarks6, remarks7, 
+    remarks8, remarks9, remarks10
+    from jintie_logs
+    where log_id = #{logId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select log_id, username, description, start_time, spend_time, url, `method`, `parameter`, 
+    ip, `result`, remarks1, remarks2, remarks3, remarks4, remarks5, remarks6, remarks7, 
+    remarks8, remarks9, remarks10
+    from jintie_logs
+  </select>
+</mapper>

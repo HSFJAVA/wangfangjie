@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.BaseJcsjInspectionMapper">
+  <resultMap id="BaseResultMap" type="com.kwe.kweplus.modal.BaseJcsjInspection">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="Inspection_type" jdbcType="INTEGER" property="inspectionType" />
+    <result column="Inspection_name" jdbcType="VARCHAR" property="inspectionName" />
+    <result column="Inspection_code" jdbcType="VARCHAR" property="inspectionCode" />
+    <result column="customs_name" jdbcType="VARCHAR" property="customsName" />
+    <result column="customs_code" jdbcType="VARCHAR" property="customsCode" />
+    <result column="remake" jdbcType="VARCHAR" property="remake" />
+    <result column="ctime" jdbcType="BIGINT" property="ctime" />
+    <result column="cname" jdbcType="VARCHAR" property="cname" />
+    <result column="utime" jdbcType="BIGINT" property="utime" />
+    <result column="uname" jdbcType="VARCHAR" property="uname" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="ncode" jdbcType="VARCHAR" property="ncode" />
+    <result column="en" jdbcType="VARCHAR" property="en" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from base_jcsj_inspection
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.kwe.kweplus.modal.BaseJcsjInspection">
+    insert into base_jcsj_inspection (id, Inspection_type, Inspection_name, 
+      Inspection_code, customs_name, customs_code, 
+      remake, ctime, cname, 
+      utime, uname, `name`, 
+      ncode, en)
+    values (#{id,jdbcType=INTEGER}, #{inspectionType,jdbcType=INTEGER}, #{inspectionName,jdbcType=VARCHAR}, 
+      #{inspectionCode,jdbcType=VARCHAR}, #{customsName,jdbcType=VARCHAR}, #{customsCode,jdbcType=VARCHAR}, 
+      #{remake,jdbcType=VARCHAR}, #{ctime,jdbcType=BIGINT}, #{cname,jdbcType=VARCHAR}, 
+      #{utime,jdbcType=BIGINT}, #{uname,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{ncode,jdbcType=VARCHAR}, #{en,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.kwe.kweplus.modal.BaseJcsjInspection">
+    update base_jcsj_inspection
+    set Inspection_type = #{inspectionType,jdbcType=INTEGER},
+      Inspection_name = #{inspectionName,jdbcType=VARCHAR},
+      Inspection_code = #{inspectionCode,jdbcType=VARCHAR},
+      customs_name = #{customsName,jdbcType=VARCHAR},
+      customs_code = #{customsCode,jdbcType=VARCHAR},
+      remake = #{remake,jdbcType=VARCHAR},
+      ctime = #{ctime,jdbcType=BIGINT},
+      cname = #{cname,jdbcType=VARCHAR},
+      utime = #{utime,jdbcType=BIGINT},
+      uname = #{uname,jdbcType=VARCHAR},
+      `name` = #{name,jdbcType=VARCHAR},
+      ncode = #{ncode,jdbcType=VARCHAR},
+      en = #{en,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, Inspection_type, Inspection_name, Inspection_code, customs_name, customs_code, 
+    remake, ctime, cname, utime, uname, `name`, ncode, en
+    from base_jcsj_inspection
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, Inspection_type, Inspection_name, Inspection_code, customs_name, customs_code, 
+    remake, ctime, cname, utime, uname, `name`, ncode, en
+    from base_jcsj_inspection
+  </select>
+
+  <select id="getInspectionCode"  parameterType="java.util.Map" resultType="java.util.Map">
+    SELECT Inspection_type inspectionType,Inspection_name inspectionName,Inspection_code inspectionCode ,name ,ncode nCode,en en,
+    customs_name customsName,customs_code customsCode
+    from base_jcsj_inspection
+    WHERE 1=1
+    <if test="map.InspectionType != null and '' != map.InspectionType ">
+      <![CDATA[AND Inspection_type= #{map.InspectionType}]]>
+    </if>
+    <if test="map.remake != null and '' != map.remake ">
+      <![CDATA[AND (en = #{map.remake} OR ncode = #{map.remake} )]]>
+    </if>
+    <!--<if test="mark==1 or  mark==3">-->
+    <!--and  customs_code ='142'-->
+    <!--</if>-->
+    <!--<if test="mark==2 or mark==4  ">-->
+    <!--and customs_code   &lt;&gt;'142'-->
+    <!--</if>-->
+
+
+  </select>
+
+</mapper>

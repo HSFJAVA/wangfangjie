@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.JintieCustomMapper">
+
+    <select id="selectDemo" parameterType="hashmap" resultType="hashmap">
+      SELECT customName FROM jintie_custom WHERE customId = #{id}
+    </select>
+    <select id="getCustomId" resultType="com.kwe.kweplus.modal.JintieCustom">
+        select * from jintie_custom WHERE customName = #{customName}
+    </select>
+    <select id="getCustomName" resultType="com.kwe.kweplus.modal.JintieCustom">
+        select * from jintie_custom WHERE `key` = #{key}
+    </select>
+</mapper>

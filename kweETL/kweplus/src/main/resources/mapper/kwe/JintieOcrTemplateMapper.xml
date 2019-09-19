@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.JintieOcrTemplateMapper">
+  <resultMap id="BaseResultMap" type="com.kwe.kweplus.modal.JintieOcrTemplate">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="templateId" jdbcType="VARCHAR" property="templateid" />
+    <result column="user" jdbcType="VARCHAR" property="user" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="customkey" jdbcType="VARCHAR" property="customkey" />
+    <result column="remarks1" jdbcType="VARCHAR" property="remarks1" />
+    <result column="remarks2" jdbcType="VARCHAR" property="remarks2" />
+    <result column="remarks3" jdbcType="VARCHAR" property="remarks3" />
+    <result column="remarks4" jdbcType="VARCHAR" property="remarks4" />
+    <result column="remarks5" jdbcType="VARCHAR" property="remarks5" />
+    <result column="remarks6" jdbcType="VARCHAR" property="remarks6" />
+    <result column="remarks7" jdbcType="VARCHAR" property="remarks7" />
+    <result column="remarks8" jdbcType="VARCHAR" property="remarks8" />
+    <result column="remarks9" jdbcType="VARCHAR" property="remarks9" />
+    <result column="remarks10" jdbcType="VARCHAR" property="remarks10" />
+  </resultMap>
+  <update id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    update  jintie_ocr_template
+    set remarks10 = '已删除'
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <insert id="insert" parameterType="com.kwe.kweplus.modal.JintieOcrTemplate">
+    insert into jintie_ocr_template (id, `name`, templateId, 
+      `user`, `time`, customkey, 
+      remarks1, remarks2, remarks3, 
+      remarks4, remarks5, remarks6, 
+      remarks7, remarks8, remarks9, 
+      remarks10)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{templateid,jdbcType=VARCHAR}, 
+      #{user,jdbcType=VARCHAR}, now(), #{customkey,jdbcType=VARCHAR},
+      #{remarks1,jdbcType=VARCHAR}, #{remarks2,jdbcType=VARCHAR}, #{remarks3,jdbcType=VARCHAR}, 
+      #{remarks4,jdbcType=VARCHAR}, #{remarks5,jdbcType=VARCHAR}, #{remarks6,jdbcType=VARCHAR}, 
+      #{remarks7,jdbcType=VARCHAR}, #{remarks8,jdbcType=VARCHAR}, #{remarks9,jdbcType=VARCHAR}, 
+      #{remarks10,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.kwe.kweplus.modal.JintieOcrTemplate">
+    update jintie_ocr_template
+    set `name` = #{name,jdbcType=VARCHAR},
+      templateId = #{templateid,jdbcType=VARCHAR},
+      `user` = #{user,jdbcType=VARCHAR},
+      `time` = now(),
+      customkey = #{customkey,jdbcType=VARCHAR},
+      remarks1 = #{remarks1,jdbcType=VARCHAR},
+      remarks2 = #{remarks2,jdbcType=VARCHAR},
+      remarks3 = #{remarks3,jdbcType=VARCHAR},
+      remarks4 = #{remarks4,jdbcType=VARCHAR},
+      remarks5 = #{remarks5,jdbcType=VARCHAR},
+      remarks6 = #{remarks6,jdbcType=VARCHAR},
+      remarks7 = #{remarks7,jdbcType=VARCHAR},
+      remarks8 = #{remarks8,jdbcType=VARCHAR},
+      remarks9 = #{remarks9,jdbcType=VARCHAR},
+      remarks10 = #{remarks10,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, `name`, templateId, `user`, `time`, customkey, remarks1, remarks2, remarks3, 
+    remarks4, remarks5, remarks6, remarks7, remarks8, remarks9, remarks10
+    from jintie_ocr_template
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectByTemplateId" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, `name`, templateId, `user`, `time`, customkey, remarks1, remarks2, remarks3,
+    remarks4, remarks5, remarks6, remarks7, remarks8, remarks9, remarks10
+    from jintie_ocr_template
+    where templateId = #{templateId,jdbcType=VARCHAR}
+  </select>
+
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, `name`, templateId, `user`, `time`, customkey, remarks1, remarks2, remarks3, 
+    remarks4, remarks5, remarks6, remarks7, remarks8, remarks9, remarks10
+    from jintie_ocr_template
+  </select>
+
+  <select id="selectByParm" resultMap="BaseResultMap">
+    select id, `name`, templateId, `user`, `time`, customkey, remarks1, remarks2, remarks3,
+    remarks4, remarks5, remarks6, remarks7, remarks8, remarks9, remarks10
+    from jintie_ocr_template
+    where remarks10 = '已启用'
+    <if test="parm.remarks1 != '' and  parm.remarks1 != null " >
+      and remarks1 = #{parm.remarks1,jdbcType=VARCHAR}
+    </if>
+    <if test="parm.remarks2 != ''and  parm.remarks2 != null " >
+      and remarks2 = #{parm.remarks2,jdbcType=VARCHAR}
+    </if>
+    <if test="parm.name != ''and  parm.name != null "  >
+      and name like concat('%',#{parm.name,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="parm.user != '' and  parm.user != null " >
+      and user = #{parm.user,jdbcType=VARCHAR}
+    </if>
+    <if test="parm.custom != '' and  parm.custom != null " >
+      and customkey =  #{parm.custom,jdbcType=VARCHAR}
+    </if>
+
+
+    GROUP BY time desc
+
+  </select>
+</mapper>

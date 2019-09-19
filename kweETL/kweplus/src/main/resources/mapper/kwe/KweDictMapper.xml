@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.KweDictMapper">
+
+
+    <select id="getKweDictByCustom"   resultType="map">
+        SELECT custom_key
+        ,sum(case when `STATUS` != '0' then total else 0 end ) as 'total'
+        ,sum(case when `STATUS` = '1' then total else 0 end ) as 'auto'
+        ,sum(case when `STATUS` = '2' then total else 0 end ) as 'affirm'
+        ,sum(case when `STATUS` = '3' then total else 0 end ) as 'import'
+        FROM  (SELECT *,count(*) total from  kwe_dict WHERE status != '0' GROUP BY custom_key,status) dict  GROUP BY dict.custom_key
+    </select>
+
+
+    <update id="deleteOrUpdateById" >
+        update kwe_dict set  STATUS = '0' where id = #{id}
+    </update>
+
+    <update id="UpdateFlagById" >
+        update kwe_dict set  flag_id = #{flagId}  where id = #{id}
+    </update>
+
+</mapper>

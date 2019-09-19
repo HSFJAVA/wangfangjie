@@ -1,0 +1,73 @@
+'******************************************************************************  
+Option Explicit
+ 
+Dim mdl ' the current model
+Set mdl = ActiveModel
+If (mdl Is Nothing) Then
+	MsgBox "There is no Active Model"
+End If
+ 
+Dim HaveExcel
+Dim RQ
+RQ = vbYes 'MsgBox("Is Excel Installed on your machine ?", vbYesNo + vbInformation, "Confirmation")
+If RQ = vbYes Then
+	HaveExcel = True
+	' Open & Create Excel Document
+	Dim x1  '
+	Set x1 = CreateObject("Excel.Application")
+	x1.Workbooks.Open "D:\temp\excel\t1.xlsx"	'指定excel文档路径
+	x1.Workbooks(1).Worksheets("Sheet1").Activate	'指定要打开的sheet名称
+Else
+	HaveExcel = False
+End If
+ 
+a x1, mdl
+sub a(x1, mdl)
+dim rwIndex
+dim tableName
+dim colname
+dim table
+dim col
+dim count
+dim abc
+ 
+on error Resume Next
+'--------------------------------
+'下面是读取excel，添加表实体属性
+'--------------------------------
+For rwIndex = 1 To 253	'指定要遍历的Excel行标  由于第2行是表头，从第1行开始，看你这个表设计多少行
+	With x1.Workbooks(1).Worksheets("Sheet1")'需要循环的sheet名称
+		If .Cells(rwIndex,1).Value <> "" And  .Cells(rwIndex,2).Value = "" And .Cells(rwIndex,3).Value <> "" Then'Excel中表头的1列是表名，2空，3是表注释
+			set table = mdl.Tables.CreateNew '创建一个表实体
+			table.Code = .Cells(rwIndex,1).Value'从excel中取得表名称和编码
+			table.Name = .Cells(rwIndex,3).Value'
+			table.Comment = .Cells(rwIndex,3).Value  '指定列说明
+			count = count + 1
+			Continue
+		End If
+		'If (.Cells(rwIndex,1).Value = "" And .Cells(rwIndex,2).Value = "" And .Cells(rwIndex,3).Value = "") Or (.Cells(rwIndex,1).Value <> "" And  .Cells(rwIndex,2).Value = "" And .Cells(rwIndex,3).Value <> "")Then
+      If .Cells(rwIndex,2).Value = "" or .Cells(rwIndex,1).Value = "字段" Then '第二列为空的都可以忽略
+			continue	'这里忽略空行和表名行、表头行
+		Else 
+			set col =table.Columns.CreateNew '创建一列/字段
+         col.Code = .Cells(rwIndex, 1).Value	'指定列code
+         col.DataType = .Cells(rwIndex, 2).Value	'指定列数据类型
+         If.Cells(rwIndex, 3).Value = "主键" Then'指定主键
+				col.Primary =true
+			End If		
+			If.Cells(rwIndex, 4).Value = "N" Then'指定列是否可空 true 为不可空
+				col.Mandatory =true
+			End If
+			col.Name = .Cells(rwIndex, 5).Value	'指定列name			
+			col.Comment = .Cells(rwIndex, 6).Value  '指定列说明
+		End If
+	End With
+Next
+	MsgBox "生成数据表结构共计 " + CStr(count), vbOK + vbInformation, "表"
+Exit Sub
+End sub
+--------------------- 
+作者：James_Bao 
+来源：CSDN 
+原文：https://blog.csdn.net/u012724167/article/details/52997204 
+版权声明：本文为博主原创文章，转载请附上博文链接！

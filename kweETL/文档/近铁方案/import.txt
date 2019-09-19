@@ -1,0 +1,1120 @@
+[
+	[{
+		"AWV": "NN",
+		"totalNum": "10",
+		"Customer Part no.": "50132591",
+		"totalVol": " 0.560 m3",
+		"Quantity": "300,000.00",
+		"DN": "4028424828",
+		"Unit": "PCE",
+		"jihe": [{
+			"Item No.": "  98825293",
+			"Date code": " 1830",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8232788A9",
+			"Lot quantity": "12,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": " 1834",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8252648A8",
+			"Lot quantity": "12,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": "1830/1834",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8252648A9",
+			"Lot quantity": "15,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": " 1834",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8252648B1",
+			"Lot quantity": " 3,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": " 1834",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8254768A1",
+			"Lot quantity": "12,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": "1830/1834",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8254768A2",
+			"Lot quantity": "12,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": " 1835",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8252638A4",
+			"Lot quantity": "12,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": "1834/1835",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8252638A5",
+			"Lot quantity": "12,000"
+		}, {
+			"Item No.": "  98825293",
+			"Date code": " 1835",
+			"Country of origin": "   PH - Philippines",
+			"Finished prod No.": " MA001492958",
+			"Lot number": "   ZA8252638A6",
+			"Lot quantity": " 6,000"
+		}],
+		"totalNet": "104.95 kg",
+		"totalGrous": "114.30 kg"
+	}, {
+		"Total": "  210,120.00 EUR"
+	}, {
+		"DNList": {
+			"  4028424834 ": [{
+				"jj": [{
+					"Date code": "   1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A3",
+					"Lot quantity": " 15000"
+				}, {
+					"Date code": "   1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA8332198A3",
+					"Lot quantity": " 15000"
+				}],
+				"case number": "CARTON 001 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "  50132579",
+				"Customer Reference": "  4500285359"
+			}, {
+				"jj": [{
+					"Date code": "   1839/1840",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8332198A6",
+					"Lot quantity": " 15000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A9",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A6",
+					"Lot quantity": " 9000"
+				}],
+				"case number": "CARTON 002 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500285359"
+			}, {
+				"jj": [{
+					"Date code": "1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA8332198A5",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A6",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638B1",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "   1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A5",
+					"Lot quantity": " 12000"
+				}],
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500285359"
+			}, {
+				"jj": [{
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638B1",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA833363G07",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A8",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A2",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "   1839/1840",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8332198A2",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1839/1840",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8332198A4",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 004 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500285359"
+			}, {
+				"jj": [{
+					"Date code": "1839/1840",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8332198A4",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "   1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A7",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA8332198A7",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333638A9",
+					"Lot quantity": " 6000"
+				}],
+				"case number": "CARTON 005 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500285359"
+			}],
+			"  4028424866 ": [{
+				"jj": [{
+					"Date code": "1841",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A2",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1839",
+					"Item No": "98824668",
+					"Lot number": "  ZA833219I09",
+					"Lot quantity": "  3000"
+				}, {
+					"Date code": "   1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A9",
+					"Lot quantity": " 12000"
+				}],
+				"case number": "CARTON 001 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "  50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "   1842/1843",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8334238A4",
+					"Lot quantity": " 15000"
+				}, {
+					"Date code": "   1842",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A4",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A6",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 002 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "   1839/1840",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8332198A8",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1844",
+					"Item No": "98824668",
+					"Lot number": "  ZA8362768A3",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1840/1841",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8333618A1",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA833219D04",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 003 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A3",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1843/1844",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8362768A5",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "   1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A7",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1841",
+					"Item No": "98824668",
+					"Lot number": "  ZA833361C03",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 004 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "1843/1844",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8362768A2",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1837/1841",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8333618A3",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "   1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A1",
+					"Lot quantity": " 12000"
+				}],
+				"case number": "CARTON 005 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "1837",
+					"Item No": "98824668",
+					"Lot number": "  ZA836276D04",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1844/1845",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8333618A8",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1845",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A7",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1842",
+					"Item No": "98824668",
+					"Lot number": "  ZA833361F06",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A3",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A5",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 006 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "1843/1844",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8362768A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1844",
+					"Item No": "98824668",
+					"Lot number": "  ZA8362768A4",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1840/1841",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8333618A1",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A8",
+					"Lot quantity": " 12000"
+				}],
+				"case number": "CARTON 007 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA8332198A7",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA8334238A6",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1845",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A7",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1841",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A2",
+					"Lot quantity": " 9000"
+				}],
+				"case number": "CARTON 008 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "1842",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A6",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA8332198A9",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1843",
+					"Item No": "98824668",
+					"Lot number": "  ZA833423E05",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1843/1844",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8362768A1",
+					"Lot quantity": " 12000"
+				}],
+				"case number": "CARTON 009 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}, {
+				"jj": [{
+					"Date code": "   1842",
+					"Item No": "98824668",
+					"Lot number": "  ZA8333618A5",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1840",
+					"Item No": "98824668",
+					"Lot number": "  ZA8332198A7",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1844",
+					"Item No": "98824668",
+					"Lot number": "  ZA8362768A3",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1843/1844",
+					"Item No": "   98824668",
+					"Lot number": "  ZA8362768A2",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 010 (DCA-P10)",
+				"Finished prod No": "  MA001414988",
+				"Customer Part no": "   50132579",
+				"Customer Reference": "  4500286792"
+			}],
+			"  4028424838 ": [{
+				"jj": [{
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241838A8",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254288A1",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7213768A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254268A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7213178A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241838A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA724183G07",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 001 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "  50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252828A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7233528A1",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1723/1724",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7252828A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254268A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722/1723",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7242208A3",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7224898A1",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 002 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1723/1724",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7252828A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254268A5",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254288A1",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241468A4",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722/1723",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7242208A3",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7233518A6",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242488A1",
+					"Lot quantity": " 9000"
+				}],
+				"case number": "CARTON 003 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254268A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7253348A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7224908A8",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 004 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7224898A1",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7233528A4",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722/1723",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7242208A3",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241058A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242198A1",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252828A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241468A9",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242208A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA724107J10",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 005 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241058A5",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "   1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252828A5",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1723/1724",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7252828A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254288A7",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7240218A9",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 006 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7214148A9",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252558B5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242458A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242478A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241828A5",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254288A7",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 007 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "   1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241058A8",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252558B9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723/1724",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7252828A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722/1723",
+					"Item No": "   95899647",
+					"Lot number": "  ZA7241058A9",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242208A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7213768A9",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 008 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7242208A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7233528A4",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241468A4",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252558B9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7254268A8",
+					"Lot quantity": " 12000"
+				}],
+				"case number": "CARTON 009 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1723",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241838A8",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7241828A5",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7240218A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA725426B02",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1722",
+					"Item No": "95899647",
+					"Lot number": "  ZA7214828A9",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1724",
+					"Item No": "95899647",
+					"Lot number": "  ZA7252838A1",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 010 (DCA-P10)",
+				"Finished prod No": "  MA001414672",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}, {
+				"jj": [{
+					"Date code": "1720",
+					"Item No": "98700060",
+					"Lot number": "  ZA7214168A7",
+					"Lot quantity": " 3000"
+				}],
+				"Finished prod No": "  MA000938296",
+				"Customer Part no": "   50042417",
+				"Customer Reference": "  4500285360"
+			}],
+			"  4028424828 ": [{
+				"jj": [{
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638A6",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1830",
+					"Item No": "98825293",
+					"Lot number": "  ZA8232788A9",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "   1828/1835",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8252638B2",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638B1",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 001 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "  50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "   1834/1835",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8252638A5",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1830",
+					"Item No": "98825293",
+					"Lot number": "  ZA8232788A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638B1",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA825263E05",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 002 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A4",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252648B1",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A6",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA825474C03",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1838",
+					"Item No": "98825293",
+					"Lot number": "  ZA8262108A2",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1838",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254758A9",
+					"Lot quantity": " 9000"
+				}],
+				"case number": "CARTON 003 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "1838",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254758A9",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638A4",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638B3",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA825263N14",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA825263I09",
+					"Lot quantity": "  3000"
+				}, {
+					"Date code": "1838",
+					"Item No": "98825293",
+					"Lot number": "  ZA8262108A2",
+					"Lot quantity": " 6000"
+				}],
+				"case number": "CARTON 004 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A2",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A5",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "   1830/1834",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8254768A2",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1835/1837",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8254748A1",
+					"Lot quantity": " 3000"
+				}],
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A6",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A5",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "   1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A3",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A2",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 006 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "   1838",
+					"Item No": "98825293",
+					"Lot number": "  ZA8262108A1",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254768A1",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1837/1838",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8254758A8",
+					"Lot quantity": " 9000"
+				}],
+				"case number": "CARTON 007 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "1835/1837",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8254748A1",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252648A8",
+					"Lot quantity": " 6000"
+				}, {
+					"Date code": "   1838",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254758A7",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1837/1838",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8254758A8",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 008 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "   1830/1834",
+					"Item No": "   98825293",
+					"Lot number": "  ZA8252648A9",
+					"Lot quantity": " 15000"
+				}, {
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638A7",
+					"Lot quantity": " 9000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252648A8",
+					"Lot quantity": " 6000"
+				}],
+				"case number": "CARTON 009 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}, {
+				"jj": [{
+					"Date code": "   1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638A8",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1835",
+					"Item No": "98825293",
+					"Lot number": "  ZA8252638A7",
+					"Lot quantity": " 3000"
+				}, {
+					"Date code": "   1837",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254748A7",
+					"Lot quantity": " 12000"
+				}, {
+					"Date code": "1834",
+					"Item No": "98825293",
+					"Lot number": "  ZA8254768A1",
+					"Lot quantity": " 3000"
+				}],
+				"case number": "CARTON 010 (DCA-P10)",
+				"Finished prod No": "  MA001492958",
+				"Customer Part no": "50132591",
+				"Customer Reference": "  4500285358"
+			}]
+		},
+		"Pallet(s)": "36 Colli"
+	}]
+]

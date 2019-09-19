@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.KweDictFlagMapper">
+    <insert id="insertFlag"  parameterType="com.kwe.kweplus.modal.KweDictFlag" keyProperty="id" useGeneratedKeys="true" >
+        insert into kwe_dict_flag (old_value, new_value,
+      update_user, update_time, remark1,
+      remark2, remark3, remark4,
+      remark5, remark6, remark7,
+      remark8, remark9, remark10
+      )
+    values (#{oldValue,jdbcType=VARCHAR}, #{newValue,jdbcType=VARCHAR},
+      #{updateUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=VARCHAR}, #{remark1,jdbcType=VARCHAR},
+      #{remark2,jdbcType=VARCHAR}, #{remark3,jdbcType=VARCHAR}, #{remark4,jdbcType=VARCHAR},
+      #{remark5,jdbcType=VARCHAR}, #{remark6,jdbcType=VARCHAR}, #{remark7,jdbcType=VARCHAR},
+      #{remark8,jdbcType=VARCHAR}, #{remark9,jdbcType=VARCHAR}, #{remark10,jdbcType=VARCHAR}
+      )
+    </insert>
+
+</mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kwe.kweplus.dao.JintieCustomFieldMapper">
+    <select id="getFieldByCustomKeyOfIn" resultType="com.kwe.kweplus.modal.JintieCustomField">
+        select * from jintie_custom_field  WHERE remarks1 = #{key} and remarks2 = '0' and remarks5 = #{modelId}
+    </select>
+
+    <select id="getFieldByCustomKeyOfOut" resultType="com.kwe.kweplus.modal.JintieCustomField">
+        select * from jintie_custom_field  WHERE remarks1 = #{key} and remarks2 = '1' and remarks5 = #{modelId}
+    </select>
+
+    <insert id="insert" >
+        insert into jintie_custom_field (customId, jintie_field,
+      field, remarks1, remarks2,
+      remarks3, remarks4, remarks5,
+      remarks6, remarks7, remarks8,
+      remarks9, remarks10, remarks11,
+      remarks12, remarks13, remarks14,
+      remarks15, remarks16, remarks17,
+      remarks18, remarks19, remarks20,
+      remarks21, remarks22, remarks23,
+      remarks24, remarks25, remarks26,
+      remarks27, remarks28, remarks29,
+      remarks30)
+    values (#{customid,jdbcType=INTEGER}, #{jintieField,jdbcType=VARCHAR},
+      #{field,jdbcType=VARCHAR}, #{remarks1,jdbcType=VARCHAR}, #{remarks2,jdbcType=VARCHAR},
+      #{remarks3,jdbcType=VARCHAR}, #{remarks4,jdbcType=VARCHAR}, #{remarks5,jdbcType=VARCHAR},
+      #{remarks6,jdbcType=VARCHAR}, #{remarks7,jdbcType=VARCHAR}, #{remarks8,jdbcType=VARCHAR},
+      #{remarks9,jdbcType=VARCHAR}, #{remarks10,jdbcType=VARCHAR}, #{remarks11,jdbcType=VARCHAR},
+      #{remarks12,jdbcType=VARCHAR}, #{remarks13,jdbcType=VARCHAR}, #{remarks14,jdbcType=VARCHAR},
+      #{remarks15,jdbcType=VARCHAR}, #{remarks16,jdbcType=VARCHAR}, #{remarks17,jdbcType=VARCHAR},
+      #{remarks18,jdbcType=VARCHAR}, #{remarks19,jdbcType=VARCHAR}, #{remarks20,jdbcType=VARCHAR},
+      #{remarks21,jdbcType=VARCHAR}, #{remarks22,jdbcType=VARCHAR}, #{remarks23,jdbcType=VARCHAR},
+      #{remarks24,jdbcType=VARCHAR}, #{remarks25,jdbcType=VARCHAR}, #{remarks26,jdbcType=VARCHAR},
+      #{remarks27,jdbcType=VARCHAR}, #{remarks28,jdbcType=VARCHAR}, #{remarks29,jdbcType=VARCHAR},
+      #{remarks30,jdbcType=VARCHAR})
+    </insert>
+    <select id="selectByStoreId" resultType="com.kwe.kweplus.modal.JintieCustomField">
+        select * from jintie_custom_field
+        WHERE
+                remarks1 = #{storeid}
+            and remarks2 = #{type}
+            and remarks3 = "Y"
+            and remarks5 = #{modelId}
+    </select>
+    <delete id="deleteByModelIdAndCustomId" parameterType="java.lang.String">
+        delete from jintie_custom_field
+        where remarks1 = #{custom_id,jdbcType=VARCHAR}
+        and remarks2 = #{type,jdbcType=VARCHAR}
+        and remarks5 = #{modelId,jdbcType=VARCHAR}
+    </delete>
+</mapper>
